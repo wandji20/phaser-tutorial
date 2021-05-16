@@ -1,9 +1,14 @@
 {
   "devDependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
     "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.4",
     "eslint": "^7.26.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.2",
+    "style-loader": "^2.0.0",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
@@ -133,6 +138,7 @@
     "path-parse": "^1.0.6",
     "path-starts-with": "^1.0.0",
     "path-type": "^3.0.0",
+    "phaser": "^3.54.0",
     "pify": "^3.0.0",
     "pkg-dir": "^2.0.0",
     "pkg-up": "^2.0.0",
