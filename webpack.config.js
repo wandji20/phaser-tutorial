@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/gameLogic/game.js',
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
@@ -27,6 +27,21 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
+        test: /\.wav$/,
+        loader: 'file-loader',
+        // query: {
+        //   name: 'static/media/[name].[hash:8].[ext]'
+        // }
+      }
     ],
   },
 };
